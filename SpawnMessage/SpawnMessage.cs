@@ -16,7 +16,10 @@
         };
 
         [PluginEntryPoint("SpawnMessage", "1.0.0", "Send a Broadcast or Hint when a player spawn.", "Bay")]
-        void Enabled() => EventManager.RegisterEvents(this);
+        void Enabled()
+        {
+            EventManager.RegisterEvents(this);
+        }
 
         [PluginEvent(ServerEventType.PlayerSpawn)]
         void OnPlayerSpawn(Player player, RoleTypeId roleTypeId)
