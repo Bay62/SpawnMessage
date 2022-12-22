@@ -1,6 +1,8 @@
 # SpawnMessage
 Plugin for the NorthwoodAPI, this plugin will send an broadcast or hint when a player spawn.
 
+![GitHub downloads](https://flat.badgen.net/github/assets-dl/Bay62/SpawnMessage)
+
 ## Config
 ```yml
 # The message type, broadcast / hint
