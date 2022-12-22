@@ -15,10 +15,10 @@
             Hint
         };
 
-        [PluginEntryPoint("SpawnMessage", "1.0.0", "Send a Broadcast or Hint when a player spawn.", "Bay")]
+        [PluginEntryPoint("SpawnMessage", "1.0.1", "Send a Broadcast or Hint when a player spawn.", "Bay")]
         void Enabled()
         {
-            EventManager.RegisterEvents(this);
+            if (Config.IsEnabled) EventManager.RegisterEvents(this);
         }
 
         [PluginEvent(ServerEventType.PlayerSpawn)]

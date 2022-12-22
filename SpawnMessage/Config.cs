@@ -6,7 +6,10 @@
 
     public class Config
     {
-        [Description("The message type, broadcast / hint")]
+        [Description("Set if plugin is enabled or not.")]
+        public bool IsEnabled { get; set; } = true;
+
+        [Description("The message type, broadcast / hint.")]
         public SpawnMessage.MessageType SpawnMessageType = SpawnMessage.MessageType.Hint;
 
         [Description("The message to send when a player spawn.")]
@@ -30,7 +33,7 @@
             [RoleTypeId.ChaosMarauder] = "You're <#0A7D34>Chaos Insurgency Marauder</color>.",
             [RoleTypeId.ChaosRepressor] = "You're <#006728>Chaos Insurgency Repressor</color>.",
             [RoleTypeId.Spectator] = "You're <#D2D4C1>Spectator</color>.",
-            [RoleTypeId.Tutorial] = "You're <#FC00AB>TUTORIAL</color>.",
+            [RoleTypeId.Tutorial] = "You're <#FC00AB>TUTORIAL</color>."
         };
 
         [Description("The seconds of the message.")]
